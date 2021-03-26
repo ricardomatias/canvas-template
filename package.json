@@ -13,8 +13,8 @@
   },
   "private": true,
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Ricardo Matias",
+  "license": "MIT",
   "dependencies": {
     "canvas-sketch-util": "^1.10.0",
     "just-debounce": "^1.1.0",
