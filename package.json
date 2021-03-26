@@ -5,8 +5,8 @@
   "main": "sketch.js",
   "type": "module",
   "scripts": {
-    "start": "rm ./public/index.js && vite",
-    "build": "esbuild index.js --outfile=public/index.js --bundle --minify && cp ./index.html ./public/index.html",
+    "start": "vite",
+    "build": "esbuild index.js --outfile=public/index.js --bundle --minify",
     "package": "npm run thumbnail && npm run zip",
     "zip": "zip -r -j objekt/sketch.zip public/*",
     "thumbnail": "npm run build && node --experimental-specifier-resolution='node' thumbnail.js"
