@@ -1,5 +1,6 @@
 node_modules
 .DS_Store
 objekt/sketch.zip
+public/index.html
 public/index.js
 public/thumbnail.png
