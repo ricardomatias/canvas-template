@@ -23,14 +23,14 @@ export const settings = {
     animate: true
 };
 
-export const sketch = ({ creator, viewer, width, height, context }) => {
+export const sketch = ({ creator, viewer, width, height, context, canvas }) => {
     // RUNS ONCE
-    return ({ context, seconds, width, height }) => {
+    return ({ seconds, millis, width, height }) => {
         // RUNS CONTINUOUSLY
     };
 }
 ```
-This is the same pattern used by [`canvas-sketch`](https://github.com/mattdesl/canvas-sketch).
+*This is the same pattern used by [canvas-sketch](https://github.com/mattdesl/canvas-sketch).*
 
 The **creator** and **viewer** parameters are exposed by hicetnunc and they reference the creator of the piece (you) and the viewer (possible buyer).
 
