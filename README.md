@@ -4,7 +4,6 @@ A template for creating a Canvas based interactive NFT on [hicetnunc](hicetnunc.
 
 ## Requirements
 * Node JS
-* zip command line (UNIX)
 
 ## Usage
 

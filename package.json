@@ -5,11 +5,11 @@
   "main": "sketch.js",
   "type": "module",
   "scripts": {
-    "start": "node esbuild.config.js -w",
+    "start": "node ./config/esbuild.config.js -w",
     "build": "esbuild index.js --outfile=public/index.js --bundle --minify",
-    "package": "npm run thumbnail && npm run zip",
+    "package": "npm run thumbnail && node ./config/archive.js",
     "zip": "zip -r -j objekt/sketch.zip public/*",
-    "thumbnail": "npm run build && node --experimental-specifier-resolution='node' thumbnail.js"
+    "thumbnail": "npm run build && node --experimental-specifier-resolution='node' ./config/thumbnail.js"
   },
   "private": true,
   "keywords": [],
@@ -21,6 +21,7 @@
     "raf": "^3.4.1"
   },
   "devDependencies": {
+    "archiver": "^5.3.0",
     "esbuild": "^0.10.0",
     "esbuild-serve": "^1.0.1",
     "npm-run-all": "^4.1.5",
