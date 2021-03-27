@@ -36,8 +36,6 @@ The **creator** and **viewer** parameters are exposed by hicetnunc and they refe
 
 When you're done just run `npm run package` and check your **object** folder.
 
-**If you need to edit `index.html` edit the one inside the public folder.**
-
 ## Commands
 
 * `npm start` to start a development server
