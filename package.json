@@ -5,7 +5,7 @@
   "main": "sketch.js",
   "type": "module",
   "scripts": {
-    "start": "vite",
+    "start": "node esbuild.config.js -w",
     "build": "esbuild index.js --outfile=public/index.js --bundle --minify",
     "package": "npm run thumbnail && npm run zip",
     "zip": "zip -r -j objekt/sketch.zip public/*",
@@ -22,9 +22,9 @@
   },
   "devDependencies": {
     "esbuild": "^0.10.0",
+    "esbuild-serve": "^1.0.1",
     "npm-run-all": "^4.1.5",
     "playwright-firefox": "^1.10.0",
-    "serve-handler": "^6.1.3",
-    "vite": "^2.1.3"
+    "serve-handler": "^6.1.3"
   }
 }
